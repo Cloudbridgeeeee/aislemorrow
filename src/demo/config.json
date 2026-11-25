@@ -1,0 +1,187 @@
+{
+  "name": "AisleMorrow",
+  "primary": "Request a pilot",
+  "accent": "#c2501b",
+  "ink": "#1c1d1f",
+  "bg": "#eeeeeb",
+  "surface": "#e1e1dd",
+  "fontLink": "<link href=\"https://fonts.googleapis.com/css2?family=Outfit:wght@400..700&family=DM+Mono:wght@400;500&display=swap\" rel=\"stylesheet\">",
+  "fontDisplay": "\"Outfit\", system-ui, sans-serif",
+  "fontText": "\"Outfit\", system-ui, sans-serif",
+  "client": "Lekki Phase 1 store",
+  "note": "A fixed store of 14 aisles. Results here come from fixed data in your browser; no AI service is called.",
+  "tabs": {
+    "overview": "Store",
+    "records": "Gaps",
+    "queue": "Alerts to review"
+  },
+  "overview": {
+    "title": "Lekki Phase 1 shelves today",
+    "kpis": [
+      [
+        "Aisles",
+        "14"
+      ],
+      [
+        "Photo rounds",
+        "2"
+      ],
+      [
+        "Open gaps",
+        "9"
+      ],
+      [
+        "Off plan",
+        "3"
+      ]
+    ],
+    "chart": {
+      "title": "Shelf fill per aisle, at the 15:00 round",
+      "labels": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "A7",
+        "A8"
+      ],
+      "values": [
+        91,
+        86,
+        78,
+        58,
+        82,
+        64,
+        73,
+        88
+      ],
+      "threshold": 75,
+      "thresholdLabel": "Target 75%",
+      "caption": "Aisles under the line get refill alerts first."
+    }
+  },
+  "records": {
+    "title": "Gaps",
+    "searchHint": "Product or aisle",
+    "statusCol": 3,
+    "columns": [
+      "Product",
+      "Aisle",
+      "Facings empty",
+      "Status",
+      "Back store",
+      "Next step"
+    ],
+    "tones": {
+      "Gap": "bad",
+      "Low": "warn",
+      "Full": "good"
+    },
+    "rows": [
+      [
+        "Bottled water 75cl",
+        "4",
+        "6 of 10",
+        "Gap",
+        "48 units",
+        "Alert to review"
+      ],
+      [
+        "Energy drinks",
+        "4",
+        "4 of 6",
+        "Gap",
+        "24 units",
+        "Alert to review"
+      ],
+      [
+        "Instant noodles",
+        "6",
+        "5 of 12",
+        "Gap",
+        "120 units",
+        "Alert to review"
+      ],
+      [
+        "Fruit juice 1L",
+        "4",
+        "3 of 9",
+        "Low",
+        "36 units",
+        "Refill at 18:00"
+      ],
+      [
+        "Sugar 1kg",
+        "7",
+        "2 of 8",
+        "Low",
+        "40 units",
+        "Refill at 18:00"
+      ],
+      [
+        "Vegetable oil 3L",
+        "8",
+        "0 of 6",
+        "Full",
+        "18 units",
+        "Recheck at 15:00"
+      ],
+      [
+        "Milk powder tins",
+        "5",
+        "0 of 10",
+        "Full",
+        "30 units",
+        "Recheck at 15:00"
+      ],
+      [
+        "Tomato paste",
+        "6",
+        "3 of 8",
+        "Gap",
+        "0 units",
+        "Order from supplier"
+      ],
+      [
+        "Detergent 900g",
+        "9",
+        "0 of 8",
+        "Full",
+        "22 units",
+        "Recheck at 15:00"
+      ]
+    ]
+  },
+  "queue": {
+    "title": "Refill alerts waiting for a supervisor",
+    "lead": "Each alert shows the shelf, the back-store stock and when the shelf is likely to run empty. Nothing is ordered automatically.",
+    "items": [
+      {
+        "id": "water",
+        "title": "Refill bottled water, aisle 4, 48 units",
+        "detail": "Shelf 2. Six of ten facings empty at 15:00.",
+        "reason": "At the current sales rate the shelf is empty by 16:00."
+      },
+      {
+        "id": "energy",
+        "title": "Refill energy drinks, aisle 4, 24 units",
+        "detail": "Shelf 5. Four of six facings empty.",
+        "reason": "Back store holds 24 units; the afternoon peak starts at 16:00."
+      },
+      {
+        "id": "noodles",
+        "title": "Refill instant noodles, aisle 6, 60 units",
+        "detail": "Shelf 3. Five of twelve facings empty.",
+        "reason": "Noodles ran empty three afternoons last week."
+      },
+      {
+        "id": "paste",
+        "title": "Flag tomato paste for the next supplier order",
+        "detail": "Aisle 6. No units left in the back store.",
+        "reason": "Three facings empty and stock records show zero on hand."
+      }
+    ]
+  }
+}
